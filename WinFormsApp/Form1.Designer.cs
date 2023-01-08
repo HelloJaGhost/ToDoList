@@ -31,11 +31,12 @@
             this.bSubmit = new System.Windows.Forms.Button();
             this.bDelete = new System.Windows.Forms.Button();
             this.tToDoAdd = new System.Windows.Forms.TextBox();
+            this.bShow = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bSubmit
             // 
-            this.bSubmit.Location = new System.Drawing.Point(616, 415);
+            this.bSubmit.Location = new System.Drawing.Point(551, 415);
             this.bSubmit.Name = "bSubmit";
             this.bSubmit.Size = new System.Drawing.Size(75, 23);
             this.bSubmit.TabIndex = 1;
@@ -61,11 +62,22 @@
             this.tToDoAdd.TabIndex = 3;
             this.tToDoAdd.TextChanged += new System.EventHandler(this.tToDoAdd_TextChanged);
             // 
+            // bShow
+            // 
+            this.bShow.Location = new System.Drawing.Point(632, 415);
+            this.bShow.Name = "bShow";
+            this.bShow.Size = new System.Drawing.Size(75, 23);
+            this.bShow.TabIndex = 4;
+            this.bShow.Text = "Show tasks";
+            this.bShow.UseVisualStyleBackColor = true;
+            this.bShow.Click += new System.EventHandler(this.bShow_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bShow);
             this.Controls.Add(this.tToDoAdd);
             this.Controls.Add(this.bDelete);
             this.Controls.Add(this.bSubmit);
@@ -81,5 +93,6 @@
         private Button bSubmit;
         private Button bDelete;
         private TextBox tToDoAdd;
+        private Button bShow;
     }
 }
